@@ -107,14 +107,6 @@ li{
   margin-top: 60px;
 }
 
-.close{
-  background: transparent;
-  border:none;
-  float: right;
-  margin-top: 60px;
-  display: none;
-}
-
 .menu-toggle{
   position: static;
   cursor:pointer;
