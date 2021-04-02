@@ -39,29 +39,15 @@ for (i = 0; i < acc.length; i++) {
     var panelToggle = this.nextElementSibling;
     if (panelToggle.style.display === "block") {
       panelToggle.style.display = "none";
+      changeImage("images/icon-hamburger.svg")
 
     } else {
       panelToggle.style.display = "block";
-      $(".toggle").hide();
-      $(".close").show();
+      changeImage("images/icon-close.svg");
     }
   });
 }
 
-var close = document.getElementsByClassName("close");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-close[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panelToggle = this.nextElementSibling;
-    if (panelToggle.style.display === "block") {
-      panelToggle.style.display = "none";
-
-    } else {
-      panelToggle.style.display = "none";
-      $(".toggle").show();
-      $(".close").hide();
-    }
-  });
+function changeImage(img) {
+    document.getElementById("hamburger").src = img;
 }
